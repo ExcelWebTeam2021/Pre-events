@@ -2,6 +2,10 @@
 
 Docs : https://docs.google.com/document/d/1wp8UeN8tRkSIIdhaLnq6d4655PMpp4_mys2kVG99pyk/edit?usp=sharing
 
+### Color theme
+
+
+
 ### Basic components required
 
 1.  Header
