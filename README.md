@@ -17,6 +17,8 @@ Docs : https://docs.google.com/document/d/1wp8UeN8tRkSIIdhaLnq6d4655PMpp4_mys2kV
 1. Status: Upcoming, Open, Ended
 2. Category: CS Tech, EC
 3. Duration: 1day, 1week, 1 month, more than a month
+4. Prize pool
+5. Type of event : competition, talks, hackathon
 
 
 
