@@ -24,11 +24,22 @@ Docs : https://docs.google.com/document/d/1wp8UeN8tRkSIIdhaLnq6d4655PMpp4_mys2kV
 3. Duration: 1day, 1week, 1 month, more than a month
 4. Prize pool
 5. Type of event : competition, talks, hackathon
+6. Team size : individual, team
+
+### Events
+
+1. Event name
+2. Description
+3. Image
+4. Date and duration
+5. Prize money
+6. Tags (Hidden for now)
+7. (Entry fees is present)
+
 
 ## Default view
 
 1. Show (all) (active) events 
-2. 
 
 ### Further features
 
