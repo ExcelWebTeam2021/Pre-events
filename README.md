@@ -22,9 +22,16 @@ Docs : https://docs.google.com/document/d/1wp8UeN8tRkSIIdhaLnq6d4655PMpp4_mys2kV
 
 1. Status: Upcoming, Open, Ended
 3. Duration: 1day, 1week, 1 month, more than a month
-4. Prize pool
+4. Prize pool (1k-2k, >5k)
 5. Type of event : competition, talks, hackathon
 6. Team size : individual, team
+
+### Sort
+
+1. Start date
+2. End date
+3. Prize money
+4. Name (optional)
 
 ### Events
 
