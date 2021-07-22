@@ -1,0 +1,34 @@
+
+.header{
+  height: 100vh;
+  width: 100%;
+  background-color: #f3f0ff;
+  margin-top:0;
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+}
+
+.header-text{
+  grid-column-start:2;
+  grid-column-end:4;
+  margin-top: auto;
+  margin-bottom:auto;
+}
+
+.header-excel{
+  color: #2a2a53;
+  font-size:40px;
+  margin-top:12px;
+}
+
+.header-desc{
+  color: #8585a8;
+}
+
+.excel-logo{
+  height: 25vh;
+  width: auto;
+  margin-top: auto;
+  margin-bottom:auto;
+  grid-column-end:6;
+}
