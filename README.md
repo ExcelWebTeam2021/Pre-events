@@ -2,8 +2,9 @@
 
 Docs : https://docs.google.com/document/d/1wp8UeN8tRkSIIdhaLnq6d4655PMpp4_mys2kVG99pyk/edit?usp=sharing
 
-### Color theme
+### Figma
 
+https://www.figma.com/file/WUX05u5l7IBFlRkUHkNG7Q/preevents-team-library?node-id=353%3A12
 
 
 ### Basic components required
