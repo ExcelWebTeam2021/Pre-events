@@ -1,0 +1,54 @@
+[
+    {
+            "category": "CS Tech",
+            "deadline": "27/7/2021",
+            "description": "Excel is renowned for the dynamic nature of events and active participation amongst the student community.",
+            "duration":"3 days",
+            "endDate":"3/8/2021",
+            "fees": "nil",
+            "img": "https://images.unsplash.com/photo-1624267349065-dc463254e0e2",
+            "name": "CEO",
+            "prize": "5,000",
+            "startDate": "1/8/2021",
+            "status": "Upcoming",
+            "tags": ["iot","machine learning","programming"],
+            "teamSize": "Individual",
+            "type": "competition",
+            "application_url":"https://ibeto.excelmec.org/"
+    },
+
+    {
+            "category":"General Tech",
+            "deadline": "30/7/2021",
+            "description":"It is a national level pursuit for socially relevant and technologically innovative ideas with the potential to trigger the next big social change.",
+            "duration":"1 week",
+            "endDate":"15/8/2021",
+            "fees": "200Rs.",
+            "name": "IbeTo",
+            "img": "https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg",
+            "prize": "8,000",
+            "startDate":"8/8/2021",
+            "status":"Upcoming",
+            "tags": ["entreprenuership","public speaking"],
+            "teamSize": "Group",
+            "type": "competition",
+            "application_url":"https://ibeto.excelmec.org/"
+    }  ,  {
+        "category": "Gen Tech",
+        "deadline": "2/12/2021",
+        "description": "lorem   ",
+        "duration":"3 days",
+        "endDate":"3/8/2021",
+        "fees": "nil",
+        "img": "https://images.unsplash.com/photo-1624267349065-dc463254e0e2",
+        "name": "CEO",
+        "prize": "5,000",
+        "startDate": "1/8/2021",
+        "status": "Completed",
+        "tags": ["web","competition","programming"],
+        "teamSize": "3-5",
+        "type": "hackathon",
+        "application_url":"https://ibeto.excelmec.org/"
+}
+     
+]
