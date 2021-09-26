@@ -18,9 +18,6 @@ export default function IndividualEvent() {
           e.endDate.split("/")[1] - 1,
           e.endDate.split("/")[0]
         );
-        console.log(curDate - startDate >= 0 && curDate - endDate <= 0);
-        console.log(startDate - curDate > 0);
-        console.log(curDate - endDate > 0);
 
         let badgeClass = "badge-success";
         let status = "upcoming";
@@ -36,7 +33,6 @@ export default function IndividualEvent() {
         }
         return (
           <div className="container">
-            {console.log(badgeClass)}
             <div className="card my-4 event">
               <div className="row no-gutters">
                 <div className="col-3">
