@@ -1,0 +1,9 @@
+.event {
+   border-left: 5px solid rgb(80, 77, 209);
+}
+
+.event-img {
+   border-radius: 0%;
+   height: 300px;
+   width: 250px;
+}
