@@ -1,38 +1,45 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 import Events from "../events.json";
 import "../stylesheet/IndividualEvent.css";
-import {Search, Clear} from '@material-ui/icons';
+import search from "./../../assets/search.png";
+import clear from "./../../assets/clear.png";
 
 function IndividualEvent() {
+  const [filter, setFilter] = useState("");
 
-    const [filter, setFilter] = useState("");
+  const searchText = (event) => {
+    setFilter(event.target.value);
+  };
 
-    const searchText = (event) => {
-        setFilter(event.target.value);
-    }
-    
-    let dataSearch = Events.filter(item => {
-        return Object.keys(item).some(key => 
-            item[key].toString().toLowerCase().includes(filter.toString().toLowerCase()))
-    });
+  let dataSearch = Events.filter((item) => {
+    return Object.keys(item).some((key) =>
+      item[key]
+        .toString()
+        .toLowerCase()
+        .includes(filter.toString().toLowerCase())
+    );
+  });
 
-    const handleClear = () =>{
-      setFilter('');
-    }
+  const handleClear = () => {
+    setFilter("");
+  };
 
-    return (
-        <div>
-        
-            <div className="col-12 mx-auto text-center search-bar">
-                <span><Search /></span>
-                <input 
-                type="text" 
-                placeholder ="Search Events" 
-                value={filter}
-                onChange={searchText.bind(this)} />
-                <button onClick={handleClear} ><Clear /></button>
-            </div>
-       
+  return (
+    <div>
+      <div className="col-12 mx-auto text-center search-bar">
+        <div className="search-icon">
+          <img src={search} alt="" />
+        </div>
+        <input
+          type="text"
+          placeholder="Search Events"
+          value={filter}
+          onChange={searchText.bind(this)}
+        />
+        <div onClick={handleClear} className="search-clear">
+          <img src={clear} alt="" />
+        </div>
+      </div>
 
       {dataSearch.map((e, index) => {
         const curDate = new Date();
