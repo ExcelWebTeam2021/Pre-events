@@ -1,4 +1,4 @@
-[
+export const eventItems = [
     {
             "category": "CS Tech",
             "deadline": "27/7/2021",
@@ -49,5 +49,5 @@
         "teamSize": "3-5",
         "type": "hackathon",
         "application_url":"https://ibeto.excelmec.org/"
-    }     
-]
+    }  ,   
+];

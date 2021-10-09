@@ -11,9 +11,6 @@ function App() {
       <Header />
 
       <div className="row preevents-maindiv">
-        <div className="col-12">
-          <SearchBar />
-        </div>
 
         <div className="col-2">
           <Sidebar />

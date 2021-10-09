@@ -1,12 +1,40 @@
-import React, { useState } from "react";
+import React, {useState} from 'react'
 import Events from "../events.json";
 import "../stylesheet/IndividualEvent.css";
+import {Search, Clear} from '@material-ui/icons';
 
-export default function IndividualEvent() {
-  //   const [status, setStatus] = useState("upcoming");
-  return (
-    <div>
-      {Events.map((e, index) => {
+function IndividualEvent() {
+
+    const [filter, setFilter] = useState("");
+
+    const searchText = (event) => {
+        setFilter(event.target.value);
+    }
+    
+    let dataSearch = Events.filter(item => {
+        return Object.keys(item).some(key => 
+            item[key].toString().toLowerCase().includes(filter.toString().toLowerCase()))
+    });
+
+    const handleClear = () =>{
+      setFilter('');
+    }
+
+    return (
+        <div>
+        
+            <div className="col-12 mx-auto text-center search-bar">
+                <span><Search /></span>
+                <input 
+                type="text" 
+                placeholder ="Search Events" 
+                value={filter}
+                onChange={searchText.bind(this)} />
+                <button onClick={handleClear} ><Clear /></button>
+            </div>
+       
+
+      {dataSearch.map((e, index) => {
         const curDate = new Date();
         const startDate = new Date(
           e.startDate.split("/")[2],
@@ -20,15 +48,15 @@ export default function IndividualEvent() {
         );
 
         let badgeClass = "badge-success";
-        let status = "upcoming";
+        let status = "Upcoming";
         if (curDate - startDate >= 0 && curDate - endDate <= 0) {
-          status = "ongoing";
+          status = "Ongoing";
           badgeClass = "badge ml-3 badge-success";
         } else if (startDate - curDate > 0) {
-          status = "upcoming";
+          status = "Upcoming";
           badgeClass = "badge ml-3 badge-warning";
         } else if (curDate - endDate > 0) {
-          status = "over";
+          status = "Over";
           badgeClass = "badge ml-3 badge-danger";
         }
         return (
@@ -74,3 +102,5 @@ export default function IndividualEvent() {
     </div>
   );
 }
+
+export default IndividualEvent;
